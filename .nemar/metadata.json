@@ -1,33 +1,108 @@
 {
   "version": "2.0",
-  "dataset_id": "on005345",
-  "source": "openneuro",
-  "source_id": "ds005345",
+  "pipeline_stage": "enriched",
   "title": "Le Petit Prince (LPP) Multi-talker: Naturalistic 7T fMRI and EEG Dataset",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Zhengwu Ma": {},
     "Nan Wang": {},
     "Jixing Li": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005345.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005345",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005345",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005345",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "modalities": [
     "anat",
     "eeg",
     "func"
   ],
-  "datatypes": [
-    "anat",
-    "eeg",
-    "func"
-  ]
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".eeg",
+    ".fif",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".wav"
+  ],
+  "description": "This dataset comprises simultaneous 7T fMRI and EEG recordings from 25 native Mandarin Chinese speakers engaged in a naturalistic listening task featuring the Chinese version of Le Petit Prince under varying multi-talker conditions. Participants attended to different talker configurations (single male, single female, mixed male, and mixed female) while maintaining fixation, with comprehension assessed via post-run quiz questions. The dataset includes preprocessed anatomical and functional MRI data (fMRIPrep v20.2.0), raw EEG recordings, and behavioral measures, providing a rich resource for investigating neural mechanisms of selective attention and speech perception in complex acoustic environments. A French cohort was also included with adjusted session durations and without visual stimuli due to legal constraints. Note: The 25 participants comprise the primary Mandarin Chinese-speaking cohort; French cohort details are documented separately in the README.",
+  "methods_description": "EEG data were acquired using a 64-channel actiCAP system sampled at 500 Hz with bandpass filtering (0.016–80 Hz). fMRI data were collected on a 7.0 T Siemens Terra scanner with functional sequences comprising 85 interleaved axial slices (1.6×1.6×1.6 mm voxel size, TR=1000 ms, TE=22.2 ms) and high-resolution anatomical T1-weighted images (MP-RAGE, 0.7×0.7×0.7 mm voxel size). Preprocessing included DICOM-to-NIfTI conversion, fMRIPrep pipeline (v20.2.0) for anatomical segmentation and MNI152NLin2009cAsym registration, motion and slice-timing correction, multi-echo ICA denoising, and voxel resampling to native and standard spaces.",
+  "keywords": [
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "speech perception"
+    },
+    {
+      "term": "selective attention"
+    },
+    {
+      "term": "multi-talker"
+    },
+    {
+      "term": "naturalistic listening"
+    },
+    {
+      "term": "7T ultra-high field"
+    },
+    {
+      "term": "Mandarin Chinese"
+    },
+    {
+      "term": "language processing"
+    },
+    {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
+      "term": "cocktail party problem"
+    },
+    {
+      "term": "Le Petit Prince"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "preprocessed data"
+    },
+    {
+      "term": "auditory processing"
+    },
+    {
+      "term": "concurrent EEG-fMRI"
+    }
+  ],
+  "source_hash": "75717af0843bf571fd4106e7c5e023e862c41fb08bc2ae16f0c9679fb8a3f99d"
 }
