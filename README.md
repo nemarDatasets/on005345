@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005345-blue)](https://doi.org/10.82901/nemar.on005345)
+
 ## Participants
 
 This dataset includes 25 native Mandarin Chinese speakers (14 females, mean age = 24.04 ± 2.28 years) who participated in both EEG and fMRI experiments. The participants were all right-handed, with no reported history of neurological disorders. They were enrolled in undergraduate or graduate programs in Shanghai. All participants gave informed consent, and the experiments were approved by the Ethics Committee of the Ninth People's Hospital, affiliated with Shanghai Jiao Tong University School of Medicine (SH9H-2019-T33-2 and SH9H-2022-T379-2).
