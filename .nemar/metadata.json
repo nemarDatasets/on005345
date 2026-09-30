@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Le Petit Prince (LPP) Multi-talker: Naturalistic 7T fMRI and EEG Dataset",
-  "description": "This dataset comprises simultaneous 7T fMRI and EEG recordings from 25 native Mandarin Chinese speakers engaged in a naturalistic listening task featuring the Chinese version of Le Petit Prince under varying multi-talker conditions. Participants attended to single or mixed talker stimuli while maintaining fixation during fMRI acquisition, with concurrent EEG monitoring at 500 Hz. The dataset includes anatomical MRI, preprocessed functional data in MNI152NLin2009cAsym space, and behavioral comprehension assessments. Preprocessing was performed using fMRIPrep (v20.2.0) including motion correction, slice-timing correction, and multi-echo ICA denoising. This dataset provides a rich resource for investigating neural mechanisms of selective attention and speech processing in naturalistic auditory environments. Note: This dataset version includes the Mandarin Chinese cohort; separate versions exist for English and French cohorts with different experimental parameters.",
-  "methods_description": "EEG data were acquired using a 64-channel actiCAP system sampled at 500 Hz with bandpass filtering (0.016–80 Hz). fMRI data were collected on a 7.0 T Siemens Terra scanner with 85 interleaved axial slices (1.6×1.6×1.6 mm voxel size, TR=1000 ms, TE=22.2 ms) and T1-weighted anatomical images (0.7×0.7×0.7 mm). Functional preprocessing included motion correction, slice-timing correction, multi-echo ICA denoising, and registration to MNI152NLin2009cAsym template using fMRIPrep (v20.2.0).",
+  "description": "A naturalistic multi-talker listening dataset in which 25 native Mandarin speakers underwent both 7T fMRI and 64-channel EEG while listening to the Chinese version of Le Petit Prince. Conditions included single-talker and mixed-talker speech with attention directed to different talkers, with comprehension quizzes after each run. The dataset supports research on speech perception, selective attention, and language processing under naturalistic conditions.",
+  "methods_description": "EEG was recorded with a 64-channel actiCAP system at 500 Hz (0.016-80 Hz filter). fMRI was acquired on a 7T Siemens Terra scanner (85 interleaved axial slices, 1.6 mm isotropic voxels, TR = 1000 ms, TE = 22.2 ms) with T1-weighted MP-RAGE anatomical scans (0.7 mm isotropic). MRI data were converted with dcm2niix and preprocessed with fMRIPrep 20.2.0, including multi-echo ICA denoising.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,59 +13,33 @@
   },
   "keywords": [
     {
-      "term": "fMRI"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "speech perception"
+      "term": "fMRI"
+    },
+    {
+      "term": "7T MRI"
+    },
+    {
+      "term": "naturalistic listening"
+    },
+    {
+      "term": "multi-talker speech"
     },
     {
       "term": "selective attention"
     },
     {
-      "term": "multi-talker listening"
-    },
-    {
-      "term": "naturalistic stimuli"
-    },
-    {
-      "term": "7T ultrahigh field"
+      "term": "language comprehension"
     },
     {
       "term": "Mandarin Chinese"
-    },
-    {
-      "term": "language processing"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "auditory processing"
-    },
-    {
-      "term": "Le Petit Prince"
-    },
-    {
-      "term": "simultaneous EEG-fMRI"
-    },
-    {
-      "term": "cocktail party problem"
-    },
-    {
-      "term": "concurrent EEG-fMRI"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005345",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005345",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -78,6 +52,11 @@
       "identifier": "10.18112/openneuro.ds005345.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005345",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "Structural MRI Dataset",
@@ -87,7 +66,7 @@
     "func"
   ],
   "sizes": [
-    "415.6 GB (505 files)"
+    "387 GB (505 files)"
   ],
   "formats": [
     ".csv",
